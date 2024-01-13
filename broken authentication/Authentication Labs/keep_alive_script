@@ -1,0 +1,45 @@
+#!/bin/python3
+
+
+import subprocess
+import pyinputplus as pyip
+from requests import get
+import urllib3
+from time import sleep
+url=pyip.inputURL(prompt='Enter lab URL: ', limit=5, timeout=120)
+# url = "https://0a630082034c50a784af06d7000a00c9.web-security-academy.net/login"
+
+# make the get request and get the necessary sessions cookies
+get_response = get(url)
+set_cookie = get_response.headers['Set-Cookie']
+session_cookie = set_cookie.split(';')[0]
+print(session_cookie)
+
+# everytime you make a get request you will get a new cookie.
+
+
+http = urllib3.PoolManager()
+
+payload = "username=admin&password=admin"
+payload = payload.encode(encoding="utf-8", errors="strict")
+
+headers = {
+    "Cookie" : session_cookie
+}
+
+while 1:
+    # x = subprocess.run('ping https://0aa1006703f3f307821770f90074002c.web-security-academy.net/login -c 1', shell=True, capture_output=True, text=True)
+    try:
+
+        response = http.request('POST', url, body=payload, headers=headers )
+        print(response.status)
+        sleep(60)
+
+    except KeyboardInterrupt:
+        print("\nexiting")
+        break
+
+    except:
+        print("something went wrong")
+
+

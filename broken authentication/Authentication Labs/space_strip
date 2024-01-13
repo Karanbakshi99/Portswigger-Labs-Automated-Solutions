@@ -1,0 +1,27 @@
+#!/bin/python3
+
+# this python script will read each line and perform a strip() function on each for the spaces
+# open file in read and append mode
+import logging, os
+logging.basicConfig(level=logging.INFO, format="line : %(lineno)d, message : %(message)s")
+# logging.disable(logging.INFO)
+
+# we have number of lines
+f = open('./test_file.txt', 'r')
+
+chars = f.read(1)
+# wr = open('./test_file.txt', 'w')
+
+while chars:
+    if chars != ' ':
+        print(chars, end='')
+        # wr.write(chars)
+             
+    chars = f.read(1)
+
+f.close()
+
+# wr.write("new text")
+# wr.close()
+# a list is returned and we can now parse through each value
+# logging.disable(logging.INFO)
