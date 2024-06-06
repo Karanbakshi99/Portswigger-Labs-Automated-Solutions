@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsBlog.css rel=stylesheet>
+        <title>2FA bypass using a brute-force attack</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>2FA bypass using a brute-force attack</h2>
+                            <a class=link-back href='https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-bypass-using-a-brute-force-attack'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="blog">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                            <a href="/my-account">My account</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="blog-header">
+                        <img src="/resources/images/blog.svg">
+                    </section>
+                    <section class="blog-list">
+                        <div class="blog-post">
+                        <a href="/post?postId=6"><img src="/image/blog/posts/69.jpg"></a>
+                        <h2>What Can 5G Do For You?</h2>
+                        <p>In a world where virtual reality has become the new reality, nothing is impossible. Household appliances are becoming robots in their own right. We were treated to an advance viewing of How Your Home Can Work For You; forget smart...</p>
+                        <a class="button is-small" href="/post?postId=6">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=1"><img src="/image/blog/posts/38.jpg"></a>
+                        <h2>Don't Believe Everything You Read</h2>
+                        <p>Don't believe everything you read is not only a common expression, it's also a pretty obvious one. Although, it's common and obvious because it's an old saying, an old saying rooted in print journalism and their individual biases. But now,...</p>
+                        <a class="button is-small" href="/post?postId=1">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=7"><img src="/image/blog/posts/2.jpg"></a>
+                        <h2>21st Century Dreaming</h2>
+                        <p>Despite the number of differences in lifestyle between us humans, we can all have dreams with similar themes. I have very vivid dreams which appear like full-length movies. I have noticed changes as society and technology evolves.</p>
+                        <a class="button is-small" href="/post?postId=7">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=3"><img src="/image/blog/posts/48.jpg"></a>
+                        <h2>Look No Hands - The Game Plays Itself</h2>
+                        <p>I was so fed up with my husband always sitting in front of the television playing his silly games, I did something about it. I came up with an idea that would revolutionize game playing in the future. I wrote...</p>
+                        <a class="button is-small" href="/post?postId=3">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=4"><img src="/image/blog/posts/59.jpg"></a>
+                        <h2>Festivals</h2>
+                        <p>Reminiscing about festivals is a lot like reminiscing about university. In your head there's those wild party nights, meeting cool new people and the great experience of being away from home. Very similar to the buzz about going to a...</p>
+                        <a class="button is-small" href="/post?postId=4">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=10"><img src="/image/blog/posts/7.jpg"></a>
+                        <h2>Faking It! - InstaCam</h2>
+                        <p>People are going to extreme lengths to pull the wool over their friends' eyes on Social Media. If you've ever clicked your way through family photos and the perfect summer and winter getaway pics of your friends on Instagram then...</p>
+                        <a class="button is-small" href="/post?postId=10">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=8"><img src="/image/blog/posts/58.jpg"></a>
+                        <h2>Awkward Breakups</h2>
+                        <p>Tis better to have loved and lost than to never to have loved at all? A beautiful thought, but maybe Tennyson never had to go around his exe's house to collect his parchment and quills after an awkward break up....</p>
+                        <a class="button is-small" href="/post?postId=8">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=2"><img src="/image/blog/posts/29.jpg"></a>
+                        <h2>Volunteering</h2>
+                        <p>It is perhaps fair to say that volunteering conjures up feelings of helping those in need or taking time out of your own life to give back to society, family or friends. However, what often goes unspoken is that to...</p>
+                        <a class="button is-small" href="/post?postId=2">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=5"><img src="/image/blog/posts/3.jpg"></a>
+                        <h2>Apps For Everything</h2>
+                        <p>I have a really rubbish cell, it doesn't have enough memory for anything more than the default Apps. Of course, it's not quite a Nokia 1011, but it may as well be. As someone that always had a PC, and...</p>
+                        <a class="button is-small" href="/post?postId=5">View post</a>
+                        </div>
+                        <div class="blog-post">
+                        <a href="/post?postId=9"><img src="/image/blog/posts/34.jpg"></a>
+                        <h2>Scams</h2>
+                        <p>Where there is good there is evil and when it comes to the internet there is surely a scam not lurking too far away. Whether it's being promised thousands from an African prince or being blackmailed by someone claiming to...</p>
+                        <a class="button is-small" href="/post?postId=9">View post</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>
